@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --black: #0f0f1e;
+            --laranja: #ff7300;
+            --laranja-rgb: rgb(255, 115, 0.5);
+            --cinza: #565e64;
+            --cinza-rgb: rgb(86, 94, 100, 0.5)
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 10px;
+            background-color: var(--black);
+            text-decoration: none;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-width: 100vw;
+            padding: 1% 5%;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            min-width: 300px;
+        }
+
+        .header .logo span {
+            font-size: 3rem;
+            font-family: "Orbitron", sans-serif;
+            color: var(--laranja-rgb);
+            font-weight: bold;
+            text-shadow: 0 0 1rem var(--laranja-rgb);
+            animation: pisca 1s ease infinite;
+        }
+
+        @keyframes pisca{
+            from{
+                text-shadow: 0 0 1rem var(--laranja-rgb);
+            }
+            to{
+                text-shadow: 1 1 1.5rem var(--laranja-rgb);
+            }
+        }
+
+        .header #btnMenu .hamburguer {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            width: 3rem;
+            height: 2.5rem;
+            padding: 0;
+            display: none;
+        }
+
+        .header #btnMenu .hamburguer span {
+            width: 100%;
+            height: 100%;
+            background-color: var(--laranja);
+            border-radius: 5rem;
+        }
+
+        .header .collapse {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            width: 40vw;
+            padding: 0.5rem;
+            box-sizing: border-box;
+            /* background-color: red; */
+        }
+
+        .header .collapse .login{
+            display: flex;
+            align-items: center;
+            background-color: silver;
+            padding: 0 3rem;
+            font-size: 1.8rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+            border-radius: 2rem;
+        }
+
+        .header #menu a {
+            color: var(--cinza);
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-family: "Montserrat", sans-serif;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        .header #menu a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 0.3rem;
+            background-color: var(--laranja);
+            transition: 0.5s ease;
+            border-radius: 2rem;
+
+        }
+
+        .header #menu a:hover::after {
+            width: 100%;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="./imgs/logo.png" alt="Logo da Coop service">
+            <span>Coop Service</span>
+        </div>
+
+        <div id="btnMenu" data-bs-toggle="collapse" data-bs-target="#menu">
+            <div class="hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="collapse" id="menu">
+                <a href="#">Home</a>
+                <a href="#">Serviços</a>
+                <a href="#">Sobre</a>
+                <a href="#">Fale Conosco</a>
+                <div class="login">Entrar</div>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
