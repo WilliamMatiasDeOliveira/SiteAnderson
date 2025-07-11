@@ -19,5 +19,5 @@ function nextSlide(){
 
 showSlide(current)
 
-setInterval(nextSlide, 10000)
+setInterval(nextSlide, 6000)
 
