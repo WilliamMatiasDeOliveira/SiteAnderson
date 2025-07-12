@@ -16,10 +16,16 @@
 
 html,
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    height: 100%;
+    overflow-x: hidden;
+    /* impede rolagem lateral */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* header */
@@ -90,15 +96,19 @@ body {
     padding: 0 3rem;
     font-size: 1.4rem;
     letter-spacing: 0.1rem;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Orbitron", sans-serif;
     font-weight: 600;
     border-radius: 2rem;
     color: white;
 }
 
+.header .collapse .login:hover {
+    color: var(--black);
+}
+
 .header #menu a {
     color: var(--cinza);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     position: relative;
@@ -121,6 +131,12 @@ body {
 .header #menu a:hover::after {
     width: 100%;
 }
+
+.header #menu a:hover {
+    color: white;
+}
+
+
 
 /* Video de fundo da pagina home */
 
@@ -614,7 +630,6 @@ body {
 
 /* footer */
 .footer {
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -624,38 +639,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 0 5%;
-}
-
-.footer .qr-code {
-    position: absolute;
-    width: 40rem;
-    height: 10rem;
-    left: 0;
-    bottom: 3rem;
-    padding-left: 5%;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer .qr-code img {
-    width: 35%;
-    height: 100%;
-}
-
-.footer .dev {
-    position: absolute;
-    text-align: center;
-    padding-top: 0.5rem;
-    left: -1.3rem;
-    bottom: 0;
-    width: 27rem;
-    height: 3rem;
-}
-
-.footer .dev p {
-    color: white;
-    font-size: 1.5rem;
-    font-family: "Montserra", sans-serif;
+    margin-top: 2rem;
 }
 
 .footer .icones {
@@ -672,4 +656,86 @@ body {
     font-size: 1.5rem;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.2rem;
+}
+
+/* PAGINA SERVICE */
+.service-container {
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+}
+
+.service-container h1 {
+    font-size: 4rem;
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 3px #565e64;
+}
+
+.service-box {
+    width: 100%;
+    padding: 2rem 5%;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.colaborator {
+    position: relative;
+    align-self: flex-start;
+    /*comando para a div ocupar apenas o espaço do conteudo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+    height: 22rem;
+}
+
+.colaborator:hover {
+    transform: scale(1.1);
+}
+
+.colaborator-image img {
+    width: 20rem;
+    border-radius: 1rem 1rem 0 0;
+
+}
+
+.colaborator-name {
+    padding: 0.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    text-align: center;
+}
+
+.colaborator-name h2 {
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1rem;
+}
+
+.colaborator-btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    letter-spacing: 0.2rem;
+    font-family: "Orbitron";
+    font-weight: 600;
+    background-color: #ff7300;
+}
+
+.colaborator-btn:hover {
+    color: black;
+    font-weight: bold;
 }
