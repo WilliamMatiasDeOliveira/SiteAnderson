@@ -48,44 +48,96 @@
         <div class="mascara"></div>
     </div>
 
-    <div class="sobre">
+    <style>
+        .fale-conosco-container {
+            width: 100%;
+            height: 100%;
+            /* background-color: yellow; */
+        }
 
-        <p>
-            Somos uma empresa no mercado de mão de obra, <span>focada em atender as demandas de pequenas escalas ou ate
-                mesmo em
-                grandes períodos</span>
-            Com foco no comprometimento, <span>agilidade e flexibilidade.</span> A cooperativa operará como uma
-            plataforma que conecta
-            empresas a mão de obra temporárias e freelancers em diversas áreas.
-        </p>
-        <br>
-        <p>
-            Fazendo que tenha acessos a grandes talentos em conexão direta, em pool de diversificadas atividades e
-            especializações. <span>Tendo contratações sob demanda.</span>
-        </p>
-        <br>
-        <p>
-            Permitindo os ajustes conforme necessidades, em foco de <span>economia em tempo e recursos.</span> Uma
-            empresa com capacidade
-            de atender projetos de diferentes escalas e complexidades, desde mão de obras diárias como serviços a longos
-            prazos.
-        </p>
-        <br>
-        <p>
-            A <span>Coop. Service</span>, se propõe a transformar a forma de prestação de serviço, <span>diminuindo os
-                vínculos empregatícios e
-                problemas administrativos,</span> criando um ecossistema que promove o desenvolvimento sustentável a uma
-            colaboração de
-            sucesso mútuo. Estamos comprometidos a redefinir o mercado de prestações de serviços, entregando valor a
-            freelancers e temporários quanto as empresas que contratam.
-        </p>
+        .fale-conosco p {
+            text-align: center;
+            padding: 2rem;
+            font-size: 1.5rem;
+            color: #ff7300;
+        }
 
+        .fale-conosco .message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3rem 0;
+            /* background-color: yellow; */
+        }
+
+        .fale-conosco .message label {
+            font-size: 4rem;
+            font-family: "Orbitron", sans-serif;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 3px #565e64;
+            margin-bottom: 2rem;
+        }
+
+        .fale-conosco .message textarea {
+            border-radius: 1rem;
+            border: none;
+            padding: 2rem;
+            font-size: 2rem;
+            outline: none;
+        }
+
+        .fale-conosco .message textarea::placeholder {
+            font-size: 2rem;
+        }
+
+        .fale-conosco .button-comentar{
+            display: flex;
+            justify-content: center;
+        }
+
+        .fale-conosco .btn-comentar {
+            color: white;
+            font-size: 1.5rem;
+            font-family: "Orbitron", sans-serif;
+            border: none;
+            padding: 1rem 35rem;
+            border-radius: 1rem;
+            letter-spacing: 0.5rem;
+            font-weight: bold;
+            background-color: #ff7300;
+        }
+
+        .fale-conosco .btn-comentar:hover{
+            color: black;
+        }
+    </style>
+
+
+    <div class="fale-conosco-container">
+
+        <section class="fale-conosco">
+            <p>
+                Para entrar em contato com agente acesse uma de nossas redes sociais.
+            </p>
+            <p>
+                Ou se você preferir pode nos deixar um comentario : )
+            </p>
+
+            <form action="#" method="post">
+                <div class="message">
+                    <label for="message">Menssagem</label>
+                    <textarea name="message" id="message" rows="5" cols="70"
+                        placeholder="Digite sua mensagem aqui ......"></textarea>
+                    </textarea>
+                </div>
+
+                <div class="button-comentar">
+                    <button type="submit" class="btn-comentar">COMENTAR</button>
+                </div>
+            </form>
+        </section>
     </div>
-
-
-
-
-
 
 
 
