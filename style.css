@@ -680,7 +680,8 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem;
+    background-color: red;
 }
 
 .colaborator {
@@ -690,8 +691,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 20rem;
+    width: 28rem;
     height: 22rem;
+    background-color: yellow;
 }
 
 .colaborator:hover {
@@ -707,9 +709,11 @@ body {
 .colaborator-name {
     padding: 0.5rem 0;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     color: white;
     text-align: center;
+    width: 20rem;
 }
 
 .colaborator-name h2 {
@@ -723,7 +727,7 @@ body {
     bottom: 0;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 60%;
     padding: 0.3rem;
     font-size: 1.2rem;
     color: white;
