@@ -16,6 +16,7 @@
 
 html,
 body {
+    width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -174,16 +175,30 @@ body {
     justify-content: center;
 }
 
-.container {
+/* .container {
     position: absolute;
     display: flex;
     z-index: 0;
     width: 80vw;
     height: 50vh;
+    height: auto;
     margin-top: 5%;
     opacity: 0;
     transform: translatex(100%);
     transition: all 0.8s ease;
+} */
+
+.container {
+    display: flex;
+    width: 80vw;
+    height: auto;
+    /* ou remova completamente */
+    margin-top: 3%;
+    opacity: 0;
+    transform: translatex(110%);
+    transition: all 0.6s ease;
+    position: absolute;
+    z-index: 0;
 }
 
 .container.active {
@@ -600,8 +615,9 @@ body {
 
 
 .container .image {
-    width: 65%;
+    width: 60%;
     height: 100%;
+
 }
 
 .container .image img {
@@ -612,9 +628,9 @@ body {
 }
 
 .container .description {
-    width: 50%;
+    width: 40%;
     height: 100%;
-    padding: 2.5rem;
+    padding: 2.5rem 7rem;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -661,7 +677,7 @@ body {
 /* PAGINA SERVICE */
 .service-container {
     width: 100vw;
-    height: 100vh;
+    height: auto;
     padding: 2rem;
 }
 
@@ -681,39 +697,56 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
-    background-color: red;
+    /* background-color: red; */
 }
 
 .colaborator {
-    position: relative;
     align-self: flex-start;
     /*comando para a div ocupar apenas o espaço do conteudo*/
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    width: 30rem;
-    height: 22rem;
-    background-color: yellow;
+    width: 28rem;
+    height: auto;
+    /* background-color: yellow; */
 }
 
 .colaborator:hover {
     transform: scale(1.1);
 }
 
-.colaborator-image img {
-    width: 20rem;
-    border-radius: 1rem 1rem 0 0;
+.colaborator-image {
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+}
 
+.colaborator-image img {
+    width: 26rem;
+    height: 19rem;
+    border-radius: 1rem 1rem 0 0;
+    border: none;
+    /* remove borda explícita */
+    outline: none;
+    /* remove contorno de foco */
+    box-shadow: none;
+    /* remove qualquer sombra */
+    display: block;
+    /* evita espaçamento extra de imagem */
 }
 
 .colaborator-name {
-    padding: 0.5rem 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     flex-wrap: wrap;
     color: white;
     text-align: center;
-    width: 20rem;
+    width: 25rem;
+    height: 10rem;
+    /* background-color: red; */
 }
 
 .colaborator-name h2 {
@@ -722,24 +755,18 @@ body {
     letter-spacing: 0.1rem;
 }
 
-.colaborator-btn {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    padding: 0.3rem;
-    font-size: 1.2rem;
+.colaborator-btn a{
     color: white;
-    border-radius: 2rem;
-    border: none;
-    letter-spacing: 0.2rem;
-    font-family: "Orbitron";
-    font-weight: 600;
+    padding: 0.8rem 4rem;
     background-color: #ff7300;
+    font-family: "Orbitron";
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
 }
 
-.colaborator-btn:hover {
+.colaborator-btn a:hover {
     color: black;
     font-weight: bold;
 }
