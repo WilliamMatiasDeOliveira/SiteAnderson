@@ -12,6 +12,7 @@
     box-sizing: border-box;
     font-size: 10px;
     text-decoration: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 html,
@@ -111,7 +112,6 @@ body {
     color: var(--cinza);
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: "Montserrat", sans-serif;
     position: relative;
     padding: 0.5rem 0;
 }
@@ -126,7 +126,6 @@ body {
     background-color: var(--laranja);
     transition: 0.5s ease;
     border-radius: 2rem;
-
 }
 
 .header #menu a:hover::after {
@@ -175,24 +174,10 @@ body {
     justify-content: center;
 }
 
-/* .container {
-    position: absolute;
-    display: flex;
-    z-index: 0;
-    width: 80vw;
-    height: 50vh;
-    height: auto;
-    margin-top: 5%;
-    opacity: 0;
-    transform: translatex(100%);
-    transition: all 0.8s ease;
-} */
-
 .container {
     display: flex;
     width: 80vw;
     height: auto;
-    /* ou remova completamente */
     margin-top: 3%;
     opacity: 0;
     transform: translatex(110%);
@@ -631,7 +616,6 @@ body {
     width: 40%;
     height: 100%;
     padding: 2.5rem 7rem;
-    font-family: "Montserrat", sans-serif;
 }
 
 .container .description .title {
@@ -670,7 +654,6 @@ body {
 .footer .cnpj {
     color: white;
     font-size: 1.5rem;
-    font-family: "Montserrat", sans-serif;
     letter-spacing: 0.2rem;
 }
 
@@ -751,7 +734,6 @@ body {
 
 .colaborator-name h2 {
     font-size: 1.2rem;
-    font-family: "Montserrat", sans-serif;
     letter-spacing: 0.1rem;
 }
 
@@ -770,3 +752,68 @@ body {
     color: black;
     font-weight: bold;
 }
+
+/* pagina de especificções de profissôes */
+/* terceirização.html, recrutamento.html, limpeza.html, jardinagem.html, etc .... */
+.terceirizacao-container {
+            width: 100%;
+            height: 100%;
+            padding: 2rem 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            /* background-color: red; */
+        }
+
+        .terceirizacao-container a {
+            color: white;
+            padding: 0.8rem 4rem;
+            background-color: #ff7300;
+            font-family: "Orbitron";
+            border-radius: 0.5rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.2rem;
+            font-weight: 600;
+            width: 20%;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .terceirizacao-container a:hover {
+            color: black;
+            font-weight: bold;
+        }
+
+
+
+        .terceirizacao-image {
+            width: 30rem;
+            height: auto;
+        }
+
+        .terceirizacao-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+        }
+
+        .terceirizacao-text {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+
+            /* background-color: yellow; */
+        }
+
+        .terceirizacao-text h1 {
+            font-size: 3rem;
+            font-family: "Orbitron", sans-serif;
+            color: #ff7300;
+        }
+
+        .terceirizacao-text p {
+            color: white;
+            font-size: 1.8rem;
+            text-align: justify;
+        }
