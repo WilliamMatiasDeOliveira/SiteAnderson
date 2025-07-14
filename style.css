@@ -755,7 +755,7 @@ body {
 
 /* pagina de especificções de profissôes */
 /* terceirização.html, recrutamento.html, limpeza.html, jardinagem.html, etc .... */
-.terceirizacao-container {
+.profissao-container {
             width: 100%;
             height: 100%;
             padding: 2rem 5%;
@@ -766,7 +766,7 @@ body {
             /* background-color: red; */
         }
 
-        .terceirizacao-container a {
+        .profissao-container a {
             color: white;
             padding: 0.8rem 4rem;
             background-color: #ff7300;
@@ -780,25 +780,25 @@ body {
             text-align: center;
         }
 
-        .terceirizacao-container a:hover {
+        .profissao-container a:hover {
             color: black;
             font-weight: bold;
         }
 
 
 
-        .terceirizacao-image {
+        .profissao-image {
             width: 30rem;
             height: auto;
         }
 
-        .terceirizacao-image img {
+        .profissao-image img {
             width: 100%;
             height: auto;
             border-radius: 1rem;
         }
 
-        .terceirizacao-text {
+        .profissao-text {
             width: 60%;
             display: flex;
             flex-direction: column;
@@ -806,13 +806,13 @@ body {
             /* background-color: yellow; */
         }
 
-        .terceirizacao-text h1 {
+        .profissao-text h1 {
             font-size: 3rem;
             font-family: "Orbitron", sans-serif;
             color: #ff7300;
         }
 
-        .terceirizacao-text p {
+        .profissao-text p {
             color: white;
             font-size: 1.8rem;
             text-align: justify;
